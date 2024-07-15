@@ -146,8 +146,13 @@ main>section {
     padding-left: 20px;
 }
 
+.love-text-content {
+    max-width: 580px;
+}
+
 /* card section */
 .card-container {
+    max-width: 580px;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
@@ -197,6 +202,11 @@ main>section {
         margin-left: 20px;
     }
 
+    .love-container {
+        gap: 30px;
+    }
+
+
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -204,6 +214,19 @@ main>section {
     .teams,
     .love-container {
         flex-direction: column;
+    }
+
+    .love-container {
+        gap: 30px;
+    }
+
+    .card-container {
+        max-width: 100%;
+    }
+    .teams-content {
+        margin-left: 85px;
+        max-width: 100%;
+    
     }
 
 }
