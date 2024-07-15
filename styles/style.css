@@ -129,7 +129,8 @@ main > section{
 /* responsive media query */
 @media screen and (max-width:576px) {
     .navbar-container,
-    .navbar-links{
+    .navbar-links,
+    .teams{
         flex-direction: column;
     }
     .navbar-item{
@@ -138,4 +139,12 @@ main > section{
     .navbar-brand-title, .banner-title{
         margin: 20px 0px 10px 0px;
     }
+   
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .teams-content{
+        margin-left: 20px;
+    }
+
 }
