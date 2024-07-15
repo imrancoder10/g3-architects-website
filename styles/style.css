@@ -35,11 +35,13 @@
     font-weight: 600;
     border-radius: 8px;
 }
-main{
+
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
-main > section{
+
+main>section {
     margin-top: 130px;
 }
 
@@ -92,59 +94,116 @@ main > section{
 .banner-img {
     width: 100%;
 }
+
 /* team section start */
-.teams{
+.teams {
     align-items: center;
 }
-.teams-content{
+
+.teams-content {
     /* border: 2px red solid; */
     margin-left: 130px;
     max-width: 530px;
 
 }
-.team-img-container{
+
+.team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 24px; 
+    grid-gap: 24px;
     border-radius: 8px;
 }
-.team-img{
+
+.team-img {
     width: 100%;
     height: 100%;
 }
-.team-title{
+
+.section-title {
     font-size: 2.8rem;
     font-weight: 800;
     margin-bottom: 20px;
 }
-.team-describtion{
+
+.section-describtion {
     font-size: 1rem;
     font-weight: 500;
 }
 
-#features{
+#features {
     color: #FF900E;
+}
+
+/* features love and enjoy start */
+.love-container {
+    gap: 130px;
+}
+
+#love-and-enjoy {
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+/* card section */
+.card-container {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 10px 0px 10px 0px;
+
+}
+
+#card-describtion {
+    margin-top: 5px;
+}
+
+.fact-img>img {
+    width: 100%;
+    height: 100%;
 }
 
 /* responsive media query */
 @media screen and (max-width:576px) {
+
     .navbar-container,
     .navbar-links,
-    .teams{
+    .teams,
+    .love-container {
         flex-direction: column;
     }
-    .navbar-item{
+
+    .navbar-item {
         margin-bottom: 10px;
     }
-    .navbar-brand-title, .banner-title{
+
+    .navbar-brand-title,
+    .banner-title {
         margin: 20px 0px 10px 0px;
     }
-   
-    .team-img-container{
+
+    .team-img-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .teams-content{
+
+    .teams-content {
         margin-left: 20px;
+    }
+
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .teams,
+    .love-container {
+        flex-direction: column;
     }
 
 }
