@@ -225,6 +225,19 @@ main>section {
     margin-top: 10px;
 }
 
+/* sponsors section start */
+.sponsor-content{
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-logo{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    filter: grayscale(100%);
+}
+
 
 /* responsive media query */
 @media screen and (max-width:576px) {
@@ -261,7 +274,8 @@ main>section {
         margin-left: 0px;
     }
     
-    .fact-card-contianer{
+    .fact-card-contianer,
+    .sponsor-logo{
         grid-template-columns: repeat(1, 1fr);
         margin-left: 30px;
         margin-top: 50px;
